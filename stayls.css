@@ -11,6 +11,15 @@ body {
   margin: 0 auto;
   max-width: 120rem;
   background-color: black;
+  font-family: "Roboto Mono", monospace;
+}
+
+.section {
+  min-height: 100vh;
+}
+
+.section-abaut {
+  min-height: 100vh;
 }
 
 /* Header sa logom i navigacijom */
@@ -19,35 +28,81 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem;
   list-style: none;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  max-width: 120rem;
+  margin: 0 auto;
 }
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  margin-top: 1rem;
+}
+
 .nav-list {
   display: flex;
   align-items: center;
-  gap: 11.2rem;
+  gap: 11.3rem;
   color: white;
   font-weight: bold;
   font-size: 1.6rem;
   list-style: none;
 }
 
-.contact {
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.btn-contact:link,
+.btn-contact:visited {
   box-shadow: 0px 5px 10px -2px rgba(255, 255, 255, 0.2);
   border-radius: 1.2rem;
-  background-color: #4e4d4d;
+  background-color: #868e96;
   padding: 0.5rem 1.6rem;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: all 0.5s;
 }
+
+.btn-contact:hover,
+.btn-contact:active {
+  background-color: #ced4daee;
+  color: #495057d6;
+}
+
+.link:link,
+.link:visited {
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.link:hover,
+.link:active {
+  color: #868e96;
+}
+
 .logo {
   width: 10rem;
 }
 
+/* main section */
+
 .conteiner {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 8rem;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 3rem;
+  padding: 12rem 0rem 0rem 0rem;
+  border-bottom: 1px solid #495057;
 }
 
 .mein-div {
@@ -56,33 +111,125 @@ body {
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  margin: 0 auto;
+  margin: 0;
+  width: 100%;
 }
 
 .img {
   width: 100%;
-  max-width: 50rem;
-  height: 46rem;
-  background-image: url(img/Osobnaslika90.jpg);
+  max-width: 55rem;
+  height: 54rem;
+  background-image: url(img/Osobnaslika78.jpg);
   background-size: cover;
   background-position: center;
-  box-shadow: inset 0 0 8rem 2.4rem black;
+  box-shadow: inset 0 0 2rem 0.8rem black;
+  display: flex;
+  justify-self: center;
+  margin-bottom: 6rem;
+  display: block;
+  transition: all 1s;
+}
+
+.img {
+  overflow: hidden;
+}
+
+.img:hover {
+  transform: scale(1.06);
 }
 
 .name {
   font-weight: 600;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   margin-bottom: 1.8rem;
 }
 
 .main-title {
   font-weight: bold;
-  font-size: 4.8rem;
-  line-height: 5rem;
-  margin-bottom: 3.8rem;
+  font-size: 3.4rem;
+  margin-bottom: 3.6rem;
 }
 
 .mein-text {
-  padding-right: 5rem;
-  font-size: 1.4rem;
+  color: #adb5bd;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  margin-bottom: 5.4rem;
+  padding-right: 14rem;
+}
+
+/* About me section */
+
+.img-img {
+  width: 100%;
+  max-width: 50rem;
+  height: 27rem;
+  background-image: url(img/slika\ ruku.jpg);
+  background-size: cover;
+  background-position: center;
+  box-shadow: inset 0 0 2rem 0.8rem black;
+  display: flex;
+  justify-self: center;
+  margin-bottom: 8.6rem;
+  display: block;
+}
+
+.conteiner-about {
+  margin-top: 6rem;
+  border-bottom: 1px solid #495057;
+}
+
+.grid-skils-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+}
+
+.about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6rem;
+  margin-top: 3.6rem;
+}
+
+.grid-skils {
+  box-shadow: 0px 5px 10px 1px rgba(255, 255, 255, 0.2);
+  padding: 2.8rem;
+  height: 30rem;
+  width: 30rem;
+  transition: all 0.4s;
+  background-color: #343a40;
+}
+
+.grid-skils:hover {
+  transform: scale(1.06);
+}
+
+.abaut-h2 {
+  margin-top:;
+  font-size: 3rem;
+  color: white;
+  margin-bottom: 3rem;
+}
+
+.about-text {
+  font-size: 1.6rem;
+  color: white;
+  margin-bottom: 7rem;
+}
+
+.about-text-text {
+  color: #adb5bd;
+  font-size: 1.2rem;
+  margin-bottom: 6rem;
+}
+
+.heading-grid {
+  color: white;
+  font-size: 1.8rem;
+  margin-bottom: 1.4rem;
+}
+
+.img-skils {
+  width: 8.8rem;
 }

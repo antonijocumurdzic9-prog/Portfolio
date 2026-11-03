@@ -8,41 +8,119 @@
       content="Antonijo ćumurdžić. Web developer posvećen jednostavnom i svestranom dizajnu. Završen napredni tečaj Jonasa Schmedtmanna i polaznik Algebre."
     />
     <link rel="stylesheet" href="stayls.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
     <title>Antonijo Ćumurdžić | Web Devleoper</title>
   </head>
   <body>
     <header class="header">
       <div class="hading">
-        <img class="logo" src="img/logo 1.jpg" alt="" />
+        <a href="">
+          <img class="logo" src="img/logo 1.jpg" alt="" />
+        </a>
         <nav class="navigation">
           <ul class="nav-list">
-            <li class="list projects">Projects</li>
-            <li class="list abaut">About me</li>
-            <li class="list contact">Contact</li>
+            <a class="link" href="#">
+              <li class="list projects">Projects</li>
+            </a>
+            <a class="link" href="#">
+              <li class="list abaut">About me</li>
+            </a>
+            <a class="btn-contact" href="#">
+              <li class="">Contact</li>
+            </a>
           </ul>
         </nav>
       </div>
     </header>
 
     <main class="main">
-      <div class="conteiner">
-        <div class="mein-div">
-          <p class="name">Antonijo Ćumurdžić</p>
-          <h1 class="main-title">
-            Front-end developer focused on building clean, modern, and
-            interactive user interfaces
-          </h1>
-          <p class="mein-text">
-            I’m a passionate front-end developer who loves playing with web
-            design to create clean and user-friendly layouts. I believe in
-            keeping things simple, intuitive, and highly functional, making sure
-            my projects are just as beautiful as they are easy to use.
-          </p>
-          <a class="btn-contact" href="#">Contact me</a>
-          <a class="btn-projects" href="">View projects</a>
+      <section class="section">
+        <div class="conteiner">
+          <div class="mein-div">
+            <p class="name">Antonijo Ćumurdžić</p>
+            <h1 class="main-title">
+              Front-end developer building clean, modern, and interactive user
+              interfaces
+            </h1>
+            <p class="mein-text">
+              I’m a passionate front-end developer who loves playing with web
+              design to create clean and user-friendly layouts. I believe in
+              keeping things simple, intuitive, and highly functional, making
+              sure my projects are just as beautiful as they are easy to use.
+            </p>
+            <div class="btn">
+              <a class="btn-contact" href="#">Contact me</a>
+              <a class="btn-projects link" href="">View projects</a>
+            </div>
+          </div>
+          <div class="img"></div>
         </div>
-        <div class="img"></div>
-      </div>
+      </section>
+
+      <section class="section-abaut">
+        <div class="conteiner-about">
+          <div class="about">
+            <div class="about-text-div">
+              <h2 class="abaut-h2">About me</h2>
+              <p class="about-text">
+                Hi, I’m Antonijo Ćumurdžić. I am a Frontend Developer with a
+                clear and driven goal: evolving into a skilled Full-Stack
+                Developer. Outside of coding, I’m highly passionate about
+                sports, which keeps me disciplined, energetic, and always ready
+                for a challenge. What drives me in tech is a great idea—I love
+                taking fresh concepts and turning them into reality. I believe
+                in keeping projects simple, clean, and efficient, focusing on
+                solutions that work flawlessly without unnecessary complexity.
+                Let's build something great together!
+              </p>
+
+              <div class="img-img"></div>
+            </div>
+            <div class="grid-skils-grid">
+              <div class="grid-skils">
+                <h2 class="heading-grid">Core Frontend</h2>
+                <p class="about-text-text">
+                  Writing semantic, clean HTML and modern CSS to build web
+                  structures.
+                </p>
+                <img
+                  class="img-skils"
+                  src="img/programming-languages.png"
+                  alt=""
+                />
+              </div>
+              <div class="grid-skils">
+                <h2 class="heading-grid">JavaScript</h2>
+                <p class="about-text-text">
+                  Applying programming logic and dynamic features to web
+                  applications.
+                </p>
+                <img class="img-skils" src="img/javascript.png" alt="" />
+              </div>
+              <div class="grid-skils">
+                <h2 class="heading-grid">Responsive & UI Design</h2>
+                <p class="about-text-text">
+                  Creating pixel-perfect layouts optimized for mobile, tablet,
+                  and desktop screens
+                </p>
+                <img class="img-skils" src="img/device.png" alt="" />
+              </div>
+              <div class="grid-skils">
+                <h2 class="heading-grid">Version Control</h2>
+                <p class="about-text-text">
+                  Managing code, tracking changes, and collaborating efficiently
+                  using Git and GitHub.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
   </body>
 </html>
