@@ -163,20 +163,6 @@ body {
 
 /* About me section */
 
-.img-img {
-  width: 100%;
-  max-width: 50rem;
-  height: 27rem;
-  background-image: url(img/slika\ ruku.jpg);
-  background-size: cover;
-  background-position: center;
-  box-shadow: inset 0 0 2rem 0.8rem black;
-  display: flex;
-  justify-self: center;
-  margin-bottom: 8.6rem;
-  display: block;
-}
-
 .conteiner-about {
   margin-top: 4rem;
   border-bottom: 1px solid #495057;
@@ -213,16 +199,16 @@ body {
 }
 
 .abaut-h2 {
+  margin-top: 5.4rem;
   font-size: 3rem;
   color: white;
-  margin-bottom: 3rem;
+  margin-bottom: 6rem;
 }
 
 .about-text {
-  line-height: 2.3rem;
+  line-height: 2.5rem;
   font-size: 1.6rem;
   color: white;
-  margin-bottom: 8rem;
 }
 
 .about-text-text {
