@@ -22,6 +22,9 @@ body {
   min-height: 100vh;
 }
 
+.project {
+}
+
 /* Header sa logom i navigacijom */
 
 .hading {
@@ -175,28 +178,32 @@ body {
 }
 
 .conteiner-about {
-  margin-top: 6rem;
+  margin-top: 4rem;
   border-bottom: 1px solid #495057;
 }
 
 .grid-skils-grid {
+  margin-top: 7rem;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 3rem;
+  grid-template-columns: 30rem 30rem;
+  gap: 4rem;
+  margin-bottom: 5rem;
 }
 
 .about {
+  align-items: start;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 6rem;
-  margin-top: 3.6rem;
+  gap: 4rem;
 }
 
 .grid-skils {
+  display: flex;
+  flex-direction: column;
   box-shadow: 0px 5px 10px 1px rgba(255, 255, 255, 0.2);
-  padding: 2.8rem;
-  height: 30rem;
-  width: 30rem;
+  padding: 2rem;
+  width: 28rem;
+  height: 28rem;
   transition: all 0.4s;
   background-color: #343a40;
 }
@@ -206,16 +213,16 @@ body {
 }
 
 .abaut-h2 {
-  margin-top:;
   font-size: 3rem;
   color: white;
   margin-bottom: 3rem;
 }
 
 .about-text {
+  line-height: 2.3rem;
   font-size: 1.6rem;
   color: white;
-  margin-bottom: 7rem;
+  margin-bottom: 8rem;
 }
 
 .about-text-text {
@@ -231,5 +238,80 @@ body {
 }
 
 .img-skils {
-  width: 8.8rem;
+  margin-top: auto;
+  align-self: flex-end;
+  width: 8rem;
+}
+
+/* Projects */
+
+.project {
+  margin-top: 6rem;
+}
+
+.Projects-h2 {
+  font-size: 3rem;
+  color: white;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.mein-project {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  margin-bottom: 6rem;
+  border-bottom: 1px solid #495057;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  color: white;
+  padding: 2rem;
+  margin-bottom: 6rem;
+  box-shadow: 0px 5px 10px 1px rgba(255, 255, 255, 0.2);
+}
+
+.project-list {
+  font-size: 1.6rem;
+  list-style: none;
+  margin-bottom: 1.6rem;
+}
+
+.project-img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 1.6rem;
+}
+
+.project-h2 {
+  font-size: 2.8rem;
+}
+
+.text-project {
+  padding-right: 10rem;
+  font-size: 1.6rem;
+  margin-bottom: 1.6rem;
+}
+
+.project-btn:link,
+.project-btn:visited {
+  box-shadow: 0px 5px 10px -2px rgba(255, 255, 255, 0.2);
+  border-radius: 1.2rem;
+  background-color: #868e96;
+  padding: 0.5rem 1.6rem;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: all 0.5s;
+}
+
+.project-btn:hover,
+.project-btn:active {
+  background-color: #ced4daee;
+  color: #495057d6;
 }
