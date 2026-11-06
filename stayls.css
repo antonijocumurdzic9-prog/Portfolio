@@ -184,6 +184,7 @@ body {
 }
 
 .grid-skils {
+  border-radius: 1rem;
   display: flex;
   flex-direction: column;
   box-shadow: 0px 5px 10px 1px rgba(255, 255, 255, 0.2);
@@ -256,32 +257,39 @@ body {
   display: flex;
   flex-direction: column;
   align-items: start;
+  align-self: center;
   color: white;
   padding: 2rem;
-  margin-bottom: 6rem;
+  border-radius: 1rem;
   box-shadow: 0px 5px 10px 1px rgba(255, 255, 255, 0.2);
+}
+
+.project-card:nth-last-child(-n + 2) {
+  margin-bottom: 6rem;
 }
 
 .project-list {
   font-size: 1.6rem;
   list-style: none;
-  margin-bottom: 1.6rem;
+  margin-bottom: 2rem;
 }
 
 .project-img {
   width: 100%;
   height: auto;
   margin-bottom: 1.6rem;
+  border-radius: 1rem;
 }
 
 .project-h2 {
+  margin-bottom: 1rem;
   font-size: 2.8rem;
 }
 
 .text-project {
   padding-right: 10rem;
   font-size: 1.6rem;
-  margin-bottom: 1.6rem;
+  margin-bottom: 1.8rem;
 }
 
 .project-btn:link,
@@ -300,4 +308,85 @@ body {
 .project-btn:active {
   background-color: #ced4daee;
   color: #495057d6;
+}
+
+/* FOOTER */
+
+.conteiner-footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 4rem;
+  min-height: 35vh;
+  margin-bottom: 6rem;
+}
+
+.information {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  border-radius: 1rem;
+  padding: 2.8rem;
+  box-shadow: 0px 5px 10px 1px rgba(255, 255, 255, 0.2);
+}
+
+.logof {
+  margin-bottom: 2rem;
+  border-radius: 1rem;
+  width: 10rem;
+}
+
+.icons {
+  display: flex;
+  gap: 2.6rem;
+}
+
+.iconf {
+  display: flex;
+  border-radius: 1rem;
+  width: 3.2rem;
+}
+
+.footer-text {
+  font-size: 1.2rem;
+  margin-bottom: 3rem;
+}
+
+.contact-footer-heading {
+  font-weight: 600;
+  font-size: 2rem;
+  margin-bottom: 3.2rem;
+}
+
+.footer-addres {
+  margin-bottom: 4rem;
+}
+
+.footer-link:link,
+.footer-link:visited {
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.footer-link:hover,
+.footer-link:active {
+  color: #868e96;
+}
+
+.number {
+  margin-bottom: 1.8rem;
+}
+
+.address {
+  font-size: 1.2rem;
+  font-style: normal;
+}
+
+.footer-list {
+  font-size: 1.2rem;
+  list-style: none;
+}
+
+.pro-list {
+  margin-bottom: 4rem;
 }
